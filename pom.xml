@@ -57,6 +57,7 @@
     <module>hbase-shaded-protobuf</module>
     <module>hbase-shaded-netty</module>
     <module>hbase-shaded-gson</module>
+    <module>hbase-jaeger</module>
     <module>hbase-shaded-miscellaneous</module>
   </modules>
   <scm>
