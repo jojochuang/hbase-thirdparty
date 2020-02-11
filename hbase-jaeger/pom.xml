@@ -33,7 +33,7 @@
     <description>HBase Jaeger tracer</description>
 
     <properties>
-        <jaegertracing.version>1.1.0</jaegertracing.version>
+        <jaegertracing.version>0.34.2</jaegertracing.version>
         <shaded.prefix>org.apache.hadoop.hbase.shaded</shaded.prefix>
     </properties>
 
@@ -79,6 +79,18 @@
                                 <createSourcesJar>false</createSourcesJar>
                                 <shadedArtifactAttached>false</shadedArtifactAttached>
                                 <shadeTestJar>false</shadeTestJar>
+
+                                <artifactSet>
+                                    <excludes>
+                                        <exclude>org.apache.httpcomponents:httpclient</exclude>
+                                        <exclude>commons-logging:commons-logging</exclude>
+                                        <exclude>commons-codec:commons-codec</exclude>
+                                        <exclude>org.apache.httpcomponents:httpcore</exclude>
+                                        <exclude>javax.annotation:javax.annotation-api</exclude>
+                                        <exclude>org.slf4j:slf4j-api</exclude>
+                                    </excludes>
+                                </artifactSet>
+
                                 <relocations>
                                     <!-- shade gson, which is transitively included via jaeger-core -->
                                     <relocation>
