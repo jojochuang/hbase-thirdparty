@@ -94,12 +94,24 @@
                   <shadedPattern>${rename.offset}.org.eclipse.jetty</shadedPattern>
                 </relocation>
                 <relocation>
-                  <pattern>javax.servlet</pattern>
-                  <shadedPattern>${rename.offset}.javax.servlet</shadedPattern>
+                  <pattern>javax</pattern>
+                  <shadedPattern>${rename.offset}.javax</shadedPattern>
                 </relocation>
                 <relocation>
                   <pattern>org.glassfish.jersey</pattern>
                   <shadedPattern>${rename.offset}.org.glassfish.jersery</shadedPattern>
+                </relocation>
+                <relocation>
+                  <pattern>jersey</pattern>
+                  <shadedPattern>${rename.offset}.jersery</shadedPattern>
+                </relocation>
+                <relocation>
+                  <pattern>javassist</pattern>
+                  <shadedPattern>${rename.offset}.javassist</shadedPattern>
+                </relocation>
+                <relocation>
+                  <pattern>com.sun.research</pattern>
+                  <shadedPattern>${rename.offset}.com.sun.research</shadedPattern>
                 </relocation>
               </relocations>
               <artifactSet>
