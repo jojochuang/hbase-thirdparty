@@ -33,7 +33,7 @@
     <groupId>org.apache</groupId>
     <artifactId>apache</artifactId>
     <version>21</version>
-    <relativePath />
+    <relativePath/>
     <!-- no parent resolution -->
   </parent>
   <groupId>org.apache.hbase.thirdparty</groupId>
@@ -115,7 +115,7 @@
       <archive>http://mail-archives.apache.org/mod_mbox/hbase-builds/</archive>
     </mailingList>
   </mailingLists>
-  <developers />
+  <developers/>
   <!--TODO-->
   <properties>
     <maven.javadoc.skip>true</maven.javadoc.skip>
@@ -132,7 +132,7 @@
     <guava.version>28.2-jre</guava.version>
     <commons-cli.version>1.4</commons-cli.version>
     <commons-collections.version>4.4</commons-collections.version>
-    <error_prone_annotations.version>2.3.4</error_prone_annotations.version>
+    <error_prone_annotations.version>2.7.1</error_prone_annotations.version>
   </properties>
   <build>
     <pluginManagement>
